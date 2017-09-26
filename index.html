@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link type="text/css" rel="stylesheet" href="css/stylesheet.css"></head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <div class="intro text-center">
+    	<p class="hello"></p>
+    	<p class="under-construction"></p>
+    	<p class="meantime"></p>
+    	<a href="google.com"><p class="resume"></p></a>
+    </div>
+
+    <div class="row1"> </div>
+ 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src = "script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.6/typed.min.js"></script>
+    <script>
+
+    function first() {
+    	$(".hello").typed({
+			strings: ["Hello."],
+			typeSpeed: 20,  
+			backDelay: 500,
+            loop: false, 
+			loopCount: false, 
+			showCursor: false,
+		});
+    }
+
+  	function second() {
+		$(".under-construction").typed({
+			strings: ["My site is under construction at the moment. :("],
+			typeSpeed: 7,  
+			backDelay: 500, 
+            loop: false, 
+			loopCount: false, 
+			showCursor: false,
+		});
+	}
+
+	function third() {
+		$(".meantime").typed({
+			strings: ["But in the meantime, if you want to learn more about me, take a look at my resume:"],
+			typeSpeed: 2, 
+			backDelay: 500, 
+            loop: false, 
+			loopCount: false,
+			showCursor: false,
+		});
+	}
+
+   	function fourth() {
+		$(".resume").typed({
+			strings: ["this.getResume()"],
+			typeSpeed: 20,  
+			backDelay: 500, 
+            loop: false, 
+			loopCount: false,
+			showCursor: false,
+		});
+	}
+	first();
+	second();
+	setTimeout(third, 1900);
+	setTimeout(fourth, 5000);
+  	</script>
+  </body>
+</html>
